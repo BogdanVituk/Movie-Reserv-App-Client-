@@ -46,7 +46,7 @@
 ## ⚙️ Як запустити локально
 
 ```bash
-git clone https://github.com/yourusername/movie-client.git
+git clone https://github.com/BogdanVituk/Movie-Reserv-App-Client-.git
 cd movie-client
 npm install
 npm run dev
