@@ -37,9 +37,9 @@
 
 ## 📸 Скріншоти
 
-| Головна| Фільм  | Бронювання | Розклад    | Місця |
-|--------|--------|------------|------------|------------|-----------|
-| ![Home](./screenshots/home.png) | ![Movie](./screenshots/movie.png) |  ![Booking](./screenshots/bookings1.png) | | ![Movie](./screenshots/schedule.png) | | ![Movie](./screenshots/seats.png) |
+| Головна                     | Фільм                      | Бронювання                 | Розклад                     | Місця                      |
+|-----------------------------|----------------------------|----------------------------|-----------------------------|----------------------------|
+| ![Home](./screenshots/home.png)      | ![Movie](./screenshots/movie.png)      | ![Booking](./screenshots/bookings1.png) | ![Schedule](./screenshots/schedule.png) | ![Seats](./screenshots/seats.png)     |
 
 ---
 
