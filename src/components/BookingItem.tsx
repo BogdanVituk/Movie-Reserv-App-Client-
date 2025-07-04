@@ -15,7 +15,7 @@ const BookingItem: FC<BookingItemProps> = ({booking}) => {
         dispatch(cancleBookings(5))
     }
     return (
-        <div className="m-5 bg-amber-300 rounded-2xl p-2">
+        <div className="m-5 bg-[rgb(15,15,53)] rounded-2xl p-2 font-medium">
             <div>Seat: {booking.seatId}</div>
             <div>Payment-Status: {booking.paymentStatus}</div>
             <div>Price: {booking.price}$</div>

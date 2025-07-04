@@ -14,8 +14,8 @@ const MyBookings = () => {
     
 
     return (
-        <div className="__container">
-            <h2 className="text-2xl font-normal">Мої бронювання</h2>
+        <div className="__container p-6">
+            <h2 className="text-xl font-normal">Мої бронювання</h2>
             {
                 loading ? 'loading'
                 :

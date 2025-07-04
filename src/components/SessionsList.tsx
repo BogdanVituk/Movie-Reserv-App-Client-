@@ -7,8 +7,13 @@ interface SessionsListProps {
 }
 
 const SessionsList: FC<SessionsListProps> = ({sessions}) => {
+
+    if(!sessions) {
+        return <div>Не має...</div>
+    }
+
     return (
-        <div>
+        <div className='flex flex-wrap'>
             {
                 sessions?.map(item => {
                     return <SessionItem session={item}/>

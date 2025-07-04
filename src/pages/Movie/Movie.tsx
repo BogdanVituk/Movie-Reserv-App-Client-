@@ -25,14 +25,16 @@ const Movie = () => {
     },[])
 
     return (
-        <div className="__container">
+        <div className="__container p-7">
             <div className="mb-10">
             {
                 loading ?
                 'loading'
                 :
                 <div className="flex">
-                    <img src={selectedMovie?.posterUrl} alt="" />
+                   <div className="w-[200px] h-[200px] overflow-hidden rounded-lg">
+                     <img src={selectedMovie?.posterUrl} className="w-full h-full object-cover" alt="" />
+                   </div>
                     <div className="flex flex-col ml-10">
                         <div className="font-bold text-2xl">{selectedMovie?.name}</div>
                         <div className="font-semibold">{selectedMovie?.description}</div>

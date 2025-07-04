@@ -8,16 +8,13 @@ interface MovieListProps {
 
 const MovieList: FC<MovieListProps> = ({movies}) => {
     return (
-        <div>
+        <div className='flex flex-wrap p-4'>
             {
                 movies.map(item => {
                     return <Link to={`/movie/${item.id}`}>
-                        <div key={item.id} className='bg-red-500 rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition p-4'>
-                            <img src={item.posterUrl} alt="poster" className='' />
-                            <div>
-                                   <h3 className='text-base font-semibold truncat'>{item.name}</h3>
-                                   <p className="text-sm text-gray-white">{item.description}</p>
-                            </div>
+                        <div key={item.id} className='p-3'>
+                            <div className='w-full h-[100px] overflow-hidden rounded-lg'><img src={item.posterUrl} alt="poster" className='w-full h-full object-cover' /></div>
+                            <div className='text-[18px] font-semibold truncat'>{item.name}</div>
                         </div> 
                     </Link>
                 })

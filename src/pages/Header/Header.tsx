@@ -9,13 +9,13 @@ const Header = () => {
 
     return (
         <header className=''>
-            <div className='__container flex justify-between p-4'>
-                <Link to='/'><div className="text-xl font-bold text-red-600 ">MovieReserv</div></Link>
-                <Link to='/schedule'><div className="text-xl font-bold hover:font-normal transtation">Schedule</div></Link>
-                <Link to='/my-bookings'><div className="text-xl font-bold ">My bookings</div></Link>
+            <div className='__container flex justify-between p-6'>
+                <Link to='/'><div className="text-xl font-bold">MovieReserv</div></Link>
+                <Link to='/schedule'><div className="text-[17px] font-bold hover:font-normal transtation">Schedule</div></Link>
+                <Link to='/my-bookings'><div className="text-[17px] font-bold ">My bookings</div></Link>
                 <div>
-                    {isAuth ? <span onClick={() => dispatch(logout())} className='text-red-500 text-xl font-medium cursor-pointer'>Logout</span> : <Link className='text-xl font-medium mr-3' to='/login'>Login</Link>}
-                    <Link className='text-xl font-medium' to='/register'>Register</Link>
+                    {isAuth ? <span onClick={() => dispatch(logout())} className='bg-amber-500 p-4 text-[17px] font-medium cursor-pointer'>Logout</span> : <Link className='bg-amber-500 p-4 rounded-2xl hover:bg-amber-600 transition-all text-[17px] font-medium mr-3' to='/login'>Login</Link>}
+                    <Link className='bg-amber-500 p-4 hover:bg-amber-600 transition-all rounded-2xl text-[17px] font-medium' to='/register'>Register</Link>
                 </div>
             </div>  
         </header>

@@ -36,14 +36,14 @@ const Login = () => {
 
 
     return (
-        <div className='flex flex-col justify-center items-center'>
-         <h2 className='mb-4'>Login</h2>
+        <div className='flex flex-col justify-center items-center '>
+         <h2 className='mb-4 text-2xl'>Login</h2>
          <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col'>
-            <input className='p-3 mb-2 focus:none' type="email" {...register('email', {required: 'Впишіть емейл'})} placeholder='email' />   
+            <input className='p-3 mb-2 focus:none bg-[rgb(15,15,53)]' type="email" {...register('email', {required: 'Впишіть емейл'})} placeholder='email' />   
             {errors.email && <span className='p-2'>{errors.email.message}</span>}
-            <input className='p-3' type="password" {...register('password', {required: 'Впишіть пасспорт'})} placeholder='password' />   
+            <input className='p-3 bg-[rgb(15,15,53)]' type="password" {...register('password', {required: 'Впишіть пасспорт'})} placeholder='password' />   
             {errors.password && <span className='p-2'>{errors.password.message}</span>}
-            <button  className='bg-red-400 cursor-pointer hover:bg-red-600 p-4' type='submit'> {loading ? "loading..." : "Вхід"}</button>
+            <button  className='bg-amber-400 cursor-pointer hover:bg-amber-600 p-4' type='submit'> {loading ? "loading..." : "Вхід"}</button>
          </form>
         </div>
     );

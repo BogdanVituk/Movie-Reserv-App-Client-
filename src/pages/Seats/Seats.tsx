@@ -31,7 +31,7 @@ const Seats = () => {
     }
 
     return (
-        <div className="__container">
+        <div className="__container p-6">
             <h2 className="font-semibold text-2xl">Seats free {seats?.length}</h2>
             {
                 loading ? 
@@ -39,7 +39,7 @@ const Seats = () => {
                 : <div className="flex flex-wrap">
                     {   
                         seats?.map(item => {
-                            return  <div onClick={() => clickHandler(item.id, item.sessionId)} className="m-5 bg-red-300 p-2 rounded-2xl font-semibold">
+                            return  <div onClick={() => clickHandler(item.id, item.sessionId)} className="m-5 bg-[rgb(15,15,53)] p-4 rounded-2xl font-semibold">
                                     <div>number: {item.number}</div> 
                                     <div>row: {item.row}</div>
                                    <div className='cursor-pointer bg-green-400 text-center rounded-2xl mt-2 hover:bg-green-500 transition p-2'>booked</div>    
